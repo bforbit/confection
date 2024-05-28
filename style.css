@@ -1,0 +1,670 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noticia Text', serif;
+}
+
+/*-----------------------------*/
+/*NAVIGATION*/
+/*-----------------------------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #242323;
+    color: ghostwhite;
+    padding: 10px 25px;
+}
+
+.header-title {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 25px;
+}
+
+ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:visited {
+    color: white;
+}
+
+ul li a:hover {
+    background-color: white;
+    padding: 5px;
+    color: black;
+}
+
+#shop-button {
+    background-color: #8C1018;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*-----------------------------*/
+/*HAMBURGER NAVIGATION*/
+/*-----------------------------*/
+
+.mobile-nav {
+    display: none;
+}
+
+/*-----------------------------*/
+/*HEADING TEXT*/
+/*-----------------------------*/
+
+h1 {
+    color: #8C1018;
+    font-family: 'Special Elite', system-ui;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.section-heading-text {
+    padding: 50px 20px 20px 20px;
+}
+
+/*-----------------------------*/
+/*CAROUSEL*/
+/*-----------------------------*/
+
+.carousel {
+   display: flex;
+   overflow: hidden;
+   position: relative;
+}
+
+.slide {
+    flex: 0 0 auto;
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    max-height: 400px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+#prev-slide,
+#next-slide {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: black;
+    opacity: 0.4;
+   border: none;
+   cursor: pointer;
+   font-size: 2rem;
+   color: white;
+   padding: 0.5rem;
+   z-index: 1;
+}
+
+#prev-slide {
+   left: 0.5rem;
+}
+
+#next-slide {
+   right: 0.5rem;
+}
+
+
+/*-----------------------------*/
+/*CAROUSEL SLIDES 1, 2*/
+/*-----------------------------*/
+
+.slide1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide1-text {
+    padding: 15px;
+}
+
+.slide1-text h1 {
+    font-size: 40px;
+    text-align: right;
+}
+
+.color-text {
+    font-size: 20px;
+    color: #635959;
+    font-weight: bold;
+}
+
+.slide2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D1CDCD;
+}
+
+.slide2-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C1018;
+}
+
+#rumor-has-it {
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 35px;
+}
+
+.slide2-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide2-img img {
+    width: 100%;
+    height: auto;
+}
+
+/*-----------------------------*/
+/*NEW CANDY*/
+/*-----------------------------*/
+
+.breaking-news {
+    background-color: #D1CDCD;
+}
+
+.breaking-news h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.candy-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.candy-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.candy-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 100px;
+}
+
+.candy-text, .candy-item {
+    text-align: center;
+}
+
+.candy-text {
+    font-size: 20px;
+    font-family: 'Racing Sans One', sans-serif;
+    color: #8C1018;
+}
+
+.candy-subtitle {
+    font-size: 14px;
+    text-align: center;
+    max-width: 200px; /* extent of subtitle text */
+}
+
+/*-----------------------------*/
+/*FROM THE EDITOR (CEO)*/
+/*-----------------------------*/
+
+.editor-group {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 300px;
+    border: 3px dashed #242323;
+}
+
+.editor-background {
+    background-color: #8C1018;
+    margin: 35px;
+    border-radius: 20px;
+    padding: 35px 35px 15px 35px;
+    max-height: 250px;
+}
+
+.editor-image {
+    height: 200px;
+    width: 130px;
+}
+
+.editor-name {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+.title {
+    font-size: 34px;
+    color: #635959;
+    font-family: 'Special Elite', system-ui;
+    font-weight: bold;
+}
+
+.editor-letter {
+    margin: auto;
+    flex: 1;
+}
+
+.from-the-editor {
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 20px;
+}
+
+/*-----------------------------*/
+/*OUR TEAM*/
+/*-----------------------------*/
+
+.our-team {
+    background-color: #8C1018;
+}
+
+.our-team h1, .team-paragraph {
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.our-team h1 {
+    font-size: 40px;
+}
+
+.team-duo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.team-duo img {
+    width: 50%;
+    height: auto;
+}
+
+/*-----------------------------*/
+/*THE LATEST SCOOP - MARKETING*/
+/*-----------------------------*/
+
+.marketing {
+    background-image:url(vintagenewsprint.jpg);
+    background-color: #635959;
+    color: #FFFFFF;
+}
+
+.scoop-heading h1 {
+    font-family: 'Special Elite', system-ui;
+    color: #D1CDCD;
+    font-size: 40px;
+}
+
+.marketing-subtext {
+    text-align: center;
+    padding: 15px;
+    margin: 0 150px 25px 150px;
+    background: white;
+    opacity: .7;
+    color: black;
+    border-radius: 50px;
+}
+
+.free {
+    display: inline;
+    font-weight: bold;
+}
+
+.marketing-group {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.marketing-item {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+}
+
+.marketing-item-text {
+    font-family: 'Special Elite', system-ui;
+    letter-spacing: 2px;
+    line-height: 25px;
+    font-size: 24px;
+}
+
+.marketing-square {
+    margin: auto;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+
+.marketing-analysis {
+    text-align: center;
+    margin: auto;
+}
+
+.marketing-rectangle {
+    width:80%;
+    height: auto;
+}
+
+/*-----------------------------*/
+/*CONTACT - FOOTER*/
+/*-----------------------------*/
+
+.contact {
+    background-color: #242323;
+    color: ghostwhite;
+}
+
+.contact-heading {
+    color: ghostwhite;
+    font-family: 'Racing Sans One', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-groups {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.socials, .sign-up, .address {
+    width: 33%;
+    text-align: center;
+}
+
+.socials {
+    padding-top: 10px;
+}
+
+.socials a:hover {
+    background-color: transparent;
+}
+
+.sign-up {
+    line-height: 25px;
+}
+
+form {
+    padding-top: 15px;
+    text-align: center;
+}
+
+form [type=email] {
+    height: 30px;
+    width: 75%;
+    border-radius: 10px;
+    border: 2px dashed #8C1018;
+    padding: 2px;
+    font-size: 1rem;
+}
+
+.submit {
+    background-color: #D1CDCD;
+    padding: 7px;
+    border-radius: 10px;
+    color: #8C1018;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.address-title img {
+    width: 240px;
+}
+
+.address-title {
+    font-weight: bold;
+    font-size: 18px;
+    display: inline;
+}
+
+.disclaimer {
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+/*---------------------------------*/
+/*POP UP BOX*/
+/*---------------------------------*/
+.pop {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    height: 550px;
+    width: 350px;
+    border: 10px solid indianred;
+    background-color: #635959;
+    color: white;
+}
+
+.pop-close {
+    text-align: right;
+}
+
+.pop-close-btn {
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: indianred;
+}
+
+.pop-box-contents {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.pop-box-contents a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.pop-box-contents a:hover {
+    background-color: transparent;
+}
+
+/*-----------------------------*/
+/*-----------------------------*/
+/*-----------------------------*/
+/*MEDIA QUERY*/
+
+@media (max-width: 1550px) {
+    .slide {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1240px) {
+
+/*NAVIGATION*/
+    nav {
+        flex-direction: column;
+    }
+    
+    .editor-group {
+    margin: 10px 50px;
+    }
+        
+    .marketing-subtext {
+    margin: 0 100px 25px 100px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+/*MAIN NAVIGATION LINKS*/
+    #main-nav {
+        display: none;
+    }
+    
+/*MOBILE NAVIGATION MENU*/
+     .mobile-nav {
+        display: flex;
+        flex-direction: column;
+}
+    .hamburger-menu {
+background-image:
+    -webkit-linear-gradient(bottom, #242323 50%, #fff 50%), 
+    -webkit-linear-gradient(bottom, #242323 50%, #fff 50%), 
+    -webkit-linear-gradient(bottom, #242323 50%, #fff 50%);
+background-image:
+    -o-linear-gradient(bottom, #242323 50%, #fff 50%), 
+    -o-linear-gradient(bottom, #242323 50%, #fff 50%), 
+    -o-linear-gradient(bottom, #242323 50%, #fff 50%);
+background-image:
+    linear-gradient(to top, #242323 50%, #fff 50%), 
+    linear-gradient(to top, #242323 50%, #fff 50%), 
+    linear-gradient(to top, #242323 50%, #fff 50%);;
+        
+    background-size: 100% 33%; /* line thickness */
+    height: 35px;
+    width: 50px;
+    cursor: pointer;
+}
+    .header-title img {
+        width: 250px;
+        height: auto;
+    }
+    
+    .vertical-nav {
+    display: none;
+}
+
+    .vertical-nav.show {
+    display: block;
+}
+    
+    .vertical-nav ul {
+        display: block;
+        width: 300px;
+        padding: 0;
+    }
+    
+    .vertical-nav li {
+        text-align: left;
+    }
+    
+    .vertical-nav li a {
+        padding: 5px;
+    }
+    
+    #shop-button {
+        width: 30%;
+        text-align: center;
+    }
+
+/*CAROUSEL*/
+    
+    .slide {
+        max-height: 500px;
+    }
+
+    .slide1, .slide2 {
+        flex-wrap: wrap;
+    }
+    
+    .slide1 img {
+        width: 400px;
+    }
+    
+    .slide1-text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .slide2-text {
+        font-size: 1rem;
+    }
+    
+    .slide2-img img {
+        height: 350px;;
+    }
+    
+
+/*BREAKING NEWS*/
+    .candy-group {
+        flex-wrap: wrap;
+    }
+    
+/*FROM THE EDITOR*/
+    .editor-group {
+        flex-direction: column-reverse;
+    }
+    
+    .editor-background {
+        margin: 15px auto;
+    }
+
+    .title {
+        font-size: 24px;
+}
+
+    .editor-letter {
+        margin: 0 15px;
+        text-align: center;        
+}
+
+    .from-the-editor {
+        font-size: 15px;
+}
+    
+/*THE LATEST SCOOP - MARKETING*/
+    
+    .marketing-group {
+        flex-direction: column;
+    }
+    
+    .marketing-analysis {
+        padding-bottom: 35px;
+    }
+    
+/*CONTACT - FOOTER*/
+    .contact-groups {
+        flex-direction: column;
+    }
+    
+    .socials, .sign-up, .address {
+        margin: auto;
+        width: auto;
+        padding: 20px 0;
+}
